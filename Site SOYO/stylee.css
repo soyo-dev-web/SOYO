@@ -26,12 +26,12 @@ header .logo {
     object-fit: contain;
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
     color: rgb(105, 104, 104);
     font-weight: bold;
 }
 
-.navbar-nav li a:hover{
+.navbar-nav li a:hover {
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
@@ -101,7 +101,7 @@ header .logo {
     backdrop-filter: blur(8px);
 }
 
-.project-card .overlay p{
+.project-card .overlay p {
     color: white;
 }
 
@@ -130,7 +130,7 @@ header .logo {
     transform: translateY(0);
 }
 
-#contact h2{
+#contact h2 {
     font-weight: bold;
 }
 
@@ -154,7 +154,22 @@ footer p {
 
 footer a p:hover {
     font-size: 16.1px;
-        color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 
 
+}
+
+@media screen and (max-width: 769px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+
+    }
+
+    #contact a {
+        font-size: 30px;
+    }
 }
