@@ -159,6 +159,19 @@ footer a p:hover {
 
 }
 
+.footer-hr {
+    display: none;
+}
+
+@media screen and (max-width: 769px) {
+    .footer-hr {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        padding-top: 20px;
+    }
+}
+
 @media screen and (max-width: 769px) {
     h1 {
         font-size: 50px;
@@ -172,4 +185,5 @@ footer a p:hover {
     #contact a {
         font-size: 30px;
     }
+
 }
