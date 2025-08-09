@@ -1,0 +1,359 @@
+/* RESET DE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+.br{
+    outline: 2px solid red;
+}
+
+/* ---------------- NAVBAR FIXE & TRANSPARENTE ---------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  color: #000;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+navbar nav a:hover {
+  color: #555;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* ---------------- HEADER (PLEIN ÉCRAN) ---------------- */
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+header img,
+header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texte centré sur l'image/vidéo (facultatif) */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* ---------------- SECTIONS ---------------- */
+section {
+  padding: 100px 20px 60px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 32px;
+}
+
+
+
+/* ---------------- SECTION À PROPOS ---------------- */
+#apropos {
+
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+
+}
+
+/* 
+.titleContainer{
+    margin-top: 40px;
+} */
+
+.aProposTitle {
+  text-align: center;
+  font-size: 4.5rem;
+  color: white;
+}
+
+.apropos-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 80px;
+}
+
+.apropos-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.apropos-img-container{
+  flex: 1;
+  max-width: 40%;
+
+}
+
+.apropos-img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.apropos-text-container{
+    flex: 2;
+    max-width: 40%;
+
+}
+
+.apropos-text {
+  max-width: 100%;
+  min-width: 280px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* GALLERIE PROJETS */
+#projets {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#projets h2 {
+  font-size: 72px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+#projets p {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center; /* Centre les colonnes si elles ne remplissent pas toute la ligne */
+  align-items: start;
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-desc {
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  max-width: 90%;
+  padding: 0 10px;
+}
+
+.project-card:hover .project-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.moreButton {
+    color: white;
+}
+
+
+/* ---------------- SECTION CONTACT ---------------- */
+#contact {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+}
+
+#contact h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+#contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact .contact-block p {
+  font-weight: bold;
+  margin: 0;
+}
+
+#contact .contact-label {
+  font-size: 32px;
+}
+
+#contact .contact-value {
+  font-size: 40px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 80px 15px 40px;
+  }
+}
+/* ---------------- TITRE À PROPOS CENTRÉ ---------------- */
+
+/* ----------- PROJECT DESCRIPTION ANIMATION ----------- */
+

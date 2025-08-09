@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SOYO – One Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="ancienstyle.css" />
+  <style>
+    .navbar {
+      will-change: transform;
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <img src="./img/Logo_SOYO.png" alt="Logo SOYO" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Nos projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header>
+    <!-- Pour une image -->
+    <img src="./img/B281D481-4449-4073-BB18-ABCA620BBDD4.jpg" alt="Hero" />
+
+    <!-- Pour une vidéo -->
+    <!-- <video autoplay muted loop playsinline>
+      <source src="votre-video.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la vidéo.
+    </video> -->
+
+    <!-- Optionnel : texte centré sur la vidéo -->
+    <!-- <div class="hero-text">
+      <h2>Bienvenue sur SOYO</h2>
+    </div> -->
+  </header>
+
+  <section id="apropos">
+    <div class="apropos-container">
+      <div class="titleContainer">
+        <h2 class="aProposTitle">À propos</h2>
+      </div>
+      <div class="apropos-content">
+        <div class="apropos-img-container">
+          <img src="./img/Logo_SOYO 2.png" alt="Portrait" class="apropos-img" />
+        </div>
+        <div class="apropos-text-container">
+          <p class="apropos-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets">
+    <h2>Nos projets</h2>
+    <p>Une section dédiée à nos réalisations.</p>
+    <div class="gallery-grid">
+      <a href="https://www.designdecarriere.com/">
+        <div class="project-card">
+          <img src="./img/DesignDeCarriere.png" alt="Projet Designe de carrière" />
+          <div class="overlay">
+            <p class="project-desc">
+              Le site “Design de carrière” est une landing page conçue pour
+              accompagner les personnes en reconversion professionnelle ou en
+              situation d’épuisement (burnout, boreout, brownout). L’objectif
+              est de les guider vers un travail porteur de sens, en s’appuyant
+              sur un processus structuré mêlant introspection, ateliers
+              pratiques et coaching personnalisé.
+            </p>
+            <p class="moreButton">Voir plus</p>
+          </div>
+        </div>
+      </a>
+      <!-- <div class="project-card">
+    <img src="./img/projet2.jpg" alt="Projet 2" />
+    <div class="overlay"></div>
+    </div>
+    <div class="project-card">
+    <img src="./img/projet3.jpg" alt="Projet 3" />
+    <div class="overlay"></div>
+    </div>
+    <div class="project-card">
+    <img src="./img/projet4.jpg" alt="Projet 4" />
+    <div class="overlay"></div>
+    </div>
+    <div class="project-card">
+    <img src="./img/projet5.jpg" alt="Projet 5" />
+    <div class="overlay"></div>
+    </div>
+    <div class="project-card">
+    <img src="./img/projet6.jpg" alt="Projet 6" />
+    <div class="overlay"></div>
+    </div>
+    <div class="project-card">
+    <img src="./img/projet7.jpg" alt="Projet 7" />
+    <div class="overlay"></div>
+    </div>
+    <div class="project-card">
+    <img src="./img/projet8.jpg" alt="Projet 8" />
+    <div class="overlay"></div>
+    </div>
+    <div class="project-card">
+    <img src="./img/projet9.jpg" alt="Projet 9" />
+    <div class="overlay"></div>
+    </div> -->
+    </div>
+  </section>
+
+  <section id="contact" style="
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+      ">
+    <h2 style="
+          font-size: 72px;
+          font-weight: bold;
+          margin-bottom: 60px;
+          color: white;
+        ">
+      CONTACT
+    </h2>
+    <div style="
+          display: flex;
+          flex-direction: row;
+          gap: 80px;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        ">
+      <div style="display: flex; flex-direction: column; align-items: center">
+        <p style="font-weight: bold; font-size: 32px; margin: 0">NUMERO :</p>
+        <a href="tel:0610597860"
+          style="font-weight: bold; font-size: 40px; margin: 0; color: white; text-decoration: none;">
+          06.10.59.78.60
+        </a>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center">
+        <p style="font-weight: bold; font-size: 32px; margin: 0">EMAIL :</p>
+        <a href="mailto:SOYO@gmail.com"
+          style="font-weight: bold; font-size: 40px; margin: 0; color: white; text-decoration: none;">
+          SOYO@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="
+        background: white;
+        color: black;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        border-top: 2px solid black;
+      ">
+    <!-- Logo à gauche -->
+    <div>
+      <img src="./img/Logo_SOYO.png" alt="Logo SOYO" style="height: 120px; margin-left: 70px;" />
+    </div>
+
+    <!-- Mentions et texte centré -->
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <a href="#" style="font-weight: bold; text-decoration: none; color: black;">MENTION L’EGALES</a>
+      <a href="#" style="font-weight: bold; text-decoration: none; color: black;">POLITIQUES DE CONFIDENTIALITE</a>
+      <p style="font-weight: bold; margin: 0;">2025.SOYO</p>
+    </div>
+
+    <!-- Réseaux sociaux à droite -->
+    <div style="display: flex; gap: 20px;">
+      <a href="#" target="_blank">
+        <img src="./img/instaLogo.png" alt="Instagram" style="height: 70px;" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="./img/linkedin.png" alt="LinkedIn" style="height: 70px;margin-right: 70px;" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".navbar");
+    let ticking = false;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (scrollTop > lastScrollTop) {
+            navbar.style.transform = "translateY(-100%)";
+          } else {
+            navbar.style.transform = "translateY(0)";
+          }
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
