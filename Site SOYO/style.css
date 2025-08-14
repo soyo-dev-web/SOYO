@@ -43,6 +43,8 @@ header .logo {
   line-height: 1.2;
 }
 
+
+
 .hero-line{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 80px;
@@ -248,27 +250,49 @@ footer a p:hover {
     display: none;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 960px) {
     .footer-hr {
         display: flex;
         margin: auto;
         width: 80%;
         padding-top: 20px;
     }
-}
 
-@media screen and (max-width: 769px) {
-    h1 {
-        font-size: 50px;
-    }
+    .hero-title {
+    font-size: 2rem;
+  }
 
-    p {
-        font-size: 15px;
 
-    }
-
-    #contact a {
+    #contact a:hover {
+        color: rgb(255, 255, 255);
         font-size: 30px;
     }
 
+    h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 15px;
+
+        }
+
+        #contact a {
+            font-size: 30px;
+        }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
 }
