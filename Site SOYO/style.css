@@ -1,3 +1,7 @@
+.br{
+    outline: 2px solid red;
+}
+
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
@@ -25,6 +29,8 @@ header .logo {
     max-height: 60px;
     object-fit: contain;
 }
+
+
 
 .navbar-nav li a {
     color: rgb(105, 104, 104);
@@ -69,6 +75,9 @@ header .logo {
     margin-right: auto;
 }
 
+#projectTitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .project-card {
     position: relative;
@@ -145,6 +154,48 @@ header .logo {
     font-size: 40.1px;
 }
 
+#numTitle{
+    font-size:70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#num{
+    font-size:50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+#emailTitle{
+    font-size:70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+#email{
+    font-size:50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+#contact h1 {
+    margin-bottom: 0; /* ou une petite valeur */
+}
+
+.myImgContainer{
+    border-right: 2px solid white;
+}
+
+#myImg{
+    width: 80%; /* réduit à 80% du conteneur */
+    max-width: 400px; /* limite à 400px */
+    height: auto; /* garde le ratio */
+    display: block;
+    margin: auto; /* centre l’image */
+}
+
 footer a,
 footer p {
     font-weight: bold;
@@ -158,6 +209,15 @@ footer a p:hover {
 
 
 }
+
+.iconNetwork{
+    height: 100%;
+    font-size: 450% !important;
+    color: black;
+
+
+}
+
 
 .footer-hr {
     display: none;
