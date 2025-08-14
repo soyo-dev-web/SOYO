@@ -30,6 +30,31 @@ header .logo {
     object-fit: contain;
 }
 
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 520;
+  font-size: 3rem;
+  text-align: center;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.2;
+}
+
+.hero-line{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+}
+
+.hero-line2{
+    letter-spacing: -2px; /* espace plus serré entre les lettres */
+    font-size: 0.9em;     /* légèrement plus petit */
+    display: inline-block; /* évite qu'elle prenne toute la largeur */
+    white-space: nowrap;   /* évite le retour à la ligne */
+}
+
 
 
 .navbar-nav li a {
