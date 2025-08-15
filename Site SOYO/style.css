@@ -307,6 +307,11 @@ footer a p:hover {
   }
 
 
+  #contact{
+    min-height: 100vh;
+    height: fit-content;
+  }
+
     #contact a:hover {
         color: rgb(255, 255, 255);
         font-size: 30px;
