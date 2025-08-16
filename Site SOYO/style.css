@@ -366,6 +366,10 @@ footer a p:hover {
         
     }
 
+    .aboutContainer{
+        width: 100% !important;
+    }
+
 
 }
 
