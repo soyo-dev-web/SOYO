@@ -358,8 +358,12 @@ footer a p:hover {
 
   .project-card.active .overlay {
     opacity: 1;
+  }
 
 
+  .project-desc{
+    font-size: 75%;
+  }
 
 
 
