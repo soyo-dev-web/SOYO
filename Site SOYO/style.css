@@ -354,7 +354,20 @@ footer a p:hover {
 }
 
 
+@media (max-width: 1194px) and (min-width: 835px) {
 
+    .iconInsta{
+        padding-right: 95px;
+
+    }
+
+
+    .iconLinkedin{
+        
+    }
+
+
+}
 
 
 
