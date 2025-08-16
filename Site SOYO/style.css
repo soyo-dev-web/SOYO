@@ -194,6 +194,16 @@ header .logo {
 }
 
 
+.project-card .overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+
 #contact h2 {
     font-weight: bold;
 }
@@ -342,7 +352,12 @@ footer a p:hover {
     margin: 20px auto;  /* centré avec marge */
   }
 
+ .project-card:hover .overlay {
+    opacity: 0; /* désactive hover sur mobile */
+  }
 
+  .project-card.active .overlay {
+    opacity: 1;
 
 
 
