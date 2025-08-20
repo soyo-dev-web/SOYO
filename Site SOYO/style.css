@@ -400,7 +400,29 @@ footer a p:hover {
   }
 }
 
+.project-card{
+   margin: 4%;
 
+}
+
+.project-card:hover img {
+    transform: none !important; /* supprime le zoom */
+  }
+
+  .project-card:hover .project-desc {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.project-desc {
+    font-size: 65%;
+}
+
+  /* rendre le texte visible en permanence */
+  .project-card .project-desc {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
 
 
 @media screen and (max-width: 480px) {
@@ -436,13 +458,6 @@ footer a p:hover {
 .project-desc {
     font-size: 50%;
 }
-
-
-
-
-
-
-
 
   /* rendre le texte visible en permanence */
   .project-card .project-desc {
