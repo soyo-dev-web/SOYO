@@ -401,8 +401,53 @@ footer a p:hover {
 }
 
 
+
+
 @media screen and (max-width: 480px) {
   .hero-title {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-width: 390px) {
+
+#apropos{
+        min-height: fit-content;
+}
+
+#email{
+ font-size: 25px!important;
+}
+
+.project-card:hover img {
+    transform: none !important; /* supprime le zoom */
+  }
+
+  .project-card:hover .project-desc {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.project-desc {
+    font-size: 60%;
+}
+
+
+
+
+
+
+
+
+  /* rendre le texte visible en permanence */
+  .project-card .project-desc {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+
+ 
+ 
+
+    
 }
