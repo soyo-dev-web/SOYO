@@ -419,6 +419,11 @@ footer a p:hover {
  font-size: 25px!important;
 }
 
+.project-card{
+   margin: 4%;
+
+}
+
 .project-card:hover img {
     transform: none !important; /* supprime le zoom */
   }
@@ -429,7 +434,7 @@ footer a p:hover {
 }
 
 .project-desc {
-    font-size: 60%;
+    font-size: 50%;
 }
 
 
