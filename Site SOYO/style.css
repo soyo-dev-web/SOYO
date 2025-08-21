@@ -160,7 +160,7 @@ header .logo {
 .project-desc {
     color: white;
     text-align: left;
-    font-size: 1rem;
+    font-size: 18px;
     line-height: 1.4;
     opacity: 0;
     transform: translateY(10px);
@@ -359,7 +359,14 @@ footer a p:hover {
   .project-card.active .overlay {
     opacity: 1;
   }
-
+  /* rendre le texte visible quand on tape (mobile) */
+  .project-card.active .project-desc {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* neutraliser le hover sur mobile */
+  .project-card:hover img { transform: none; }
+  .project-card:hover .project-desc { opacity: 0; transform: translateY(10px); }
 
   .project-desc{
     font-size: 75%;
@@ -394,13 +401,18 @@ footer a p:hover {
 
 
 
+
+
+
+
 @media screen and (max-width: 992px) {
   .hero-title {
     font-size: 2.5rem;
   }
-}
 
-.project-card{
+
+
+  .project-card{
    margin: 4%;
 
 }
@@ -415,7 +427,7 @@ footer a p:hover {
 }
 
 .project-desc {
-    font-size: 65%;
+    font-size: 10px;
 }
 
   /* rendre le texte visible en permanence */
@@ -424,6 +436,8 @@ footer a p:hover {
     transform: translateY(0) !important;
   }
 
+  
+}
 
 @media screen and (max-width: 480px) {
   .hero-title {
