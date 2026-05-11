@@ -397,13 +397,18 @@ footer a p:hover {
       border-right: none; /* on enlève complètement */
     }
 
-    .mobile-separator {
-        display: block;
-        border: none;
-        border-bottom: 4px solid rgb(255, 255, 255);
-        width: 80%;         /* largeur réduite */
-        margin: 20px auto;  /* centré avec marge */
-    }
+     .myImgContainer {
+  border-right: none; /* on enlève complètement */
+}
+
+.mobile-separator {
+    display: block;
+    border: none;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    width: 80%;         /* largeur réduite */
+    margin: 20px auto;  /* centré avec marge */
+  }
+    
 }
 
 
@@ -518,4 +523,8 @@ footer a p:hover {
     font-size: 50%;
 }
 
+ 
+ 
+
+    
 }
